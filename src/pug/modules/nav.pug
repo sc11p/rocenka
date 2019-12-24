@@ -1,0 +1,23 @@
+header.templateux-navbar(data-aos="fade-down")
+  .container-fluid
+    .row
+      .col-sm-3.col-3.site-logo
+        a.animsition-link(href="../") Росоценка
+      .col-sm-9.col-9.text-right
+        button.hamburger.hamburger--spin.toggle-menu.ml-auto.js-toggle-menu(type="button")
+          span.hamburger-box
+            span.hamburger-inner
+        nav.templateux-menu.js-templateux-menu(role="navigation")
+          ul.list-unstyled
+            li(class=(name === "index" ? "active" : undefined))
+              a.animsition-link(href="../") Главная
+            li(class=(name === "ocenka" ? "active" : undefined))
+              a.animsition-link(href="../ocenka/") Оценка
+            li(class=(name === "expertise" ? "active" : undefined))
+              a.animsition-link(href="../expertise/") Экспертиза
+            li(class=(name === "polezno" ? "active" : undefined))
+              a.animsition-link(href="../polezno/") Полезное
+            li.font-weight-bold(class=(name === "oplata" ? "active" : undefined))
+              a.animsition-link(href="../oplata/") Оплата
+            li(class=(name === "contact" ? "active" : undefined))
+              a.animsition-link(href="../contact/") Контакты

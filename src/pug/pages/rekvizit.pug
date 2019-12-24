@@ -1,0 +1,98 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Независимая оценочная компания «Росоценка». Реквизиты.'
+    - var name = "polezno"
+    - var desc = "Реквизиты компании «Росоценка»"
+
+block content
+
+    section.templateux-hero(data-scrollax-parent="true")
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Реквизиты компании
+            a.go-down.js-smoothscroll(href="#next")
+
+    section#next.mb-5
+      .container(data-aos="fade-up")
+        .row
+          .col-md-12(data-aos="fade-up")
+            table.table-striped
+              tr.pure-table-odd
+                td
+                  p(align="center")
+                    strong Наименование
+                td
+                  p(align="center")
+                    strong Значение
+              tr
+                td
+                  p(align="center")  Организация 
+                td
+                  p(align="center")
+                    | Общество с ограниченной ответственностью «Росоценка»
+                    br
+              tr
+                td
+                  p(align="center")  Телефон 
+                td
+                  p(align="center")
+                    | 8-800-200-3770, (+7 343) 222-37-70
+                    br
+              tr
+                td
+                  p(align="center")  Адрес 
+                td
+                  p(align="center")
+                    | 620142, г. Екатеринбург, ул. Чапаева, 21
+                    br
+              tr
+                td
+                  p(align="center")  ИНН/КПП 
+                td
+                  p(align="center")
+                    | 6670253431/667001001
+                    br
+              tr
+                td
+                  p(align="center")  ОГРН 
+                td
+                  p(align="center")
+                    | 1096670012152
+                    br
+              tr
+                td
+                  p(align="center")  Банк 
+                td
+                  p(align="center")
+                    | УРАЛЬСКИЙ БАНК СБЕРБАНКА РФ Г. ЕКАТЕРИНБУРГ
+                    br
+              tr
+                td
+                  p(align="center")  Рас./счет 
+                td
+                  p(align="center")
+                    | 40702810016540004599
+                    br
+              tr
+                td
+                  p(align="center")  Корсчет 
+                td
+                  p(align="center")
+                    | 30101810500000000674
+                    br
+              tr
+                td
+                  p(align="center")  БИК 
+                td
+                  p(align="center")
+                    | 046577674
+                    br
+              tr
+                td
+                  p(align="center")  Генеральный директор  
+                td
+                  p(align="center")
+                    | Мартьянова Надежда Викторовна, действует на основании устава
+                    br

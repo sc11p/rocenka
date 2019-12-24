@@ -1,0 +1,8 @@
+//="vendor/jquery.min.js"
+//="vendor/popper.min.js"
+//="vendor/animsition.min.js"
+//="vendor/aos.min.js"
+//="vendor/bootstrap.min.js"
+//="vendor/owl.carousel.min.js"
+//="vendor/scrollax.min.js"
+//="vendor/slick.min.js"

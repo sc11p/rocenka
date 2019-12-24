@@ -1,0 +1,20 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Независимая оценочная компания Росоценка. Оценочные услуги.'
+    - var name = "ocenka"
+    - var desc = "Оценка материнальных активов - оценочная компания «Росоценка» в Екатеринбурге"
+    
+
+block content
+    section.templateux-hero(data-scrollax-parent="true")
+      // <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="images/hero_2.jpg" /></div>
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Оценочные услуги
+            a.go-down.js-smoothscroll(href="#next")
+    
+    section#next.mb-5
+      .container(data-aos="fade-up")
+        include ../modules/ocenka_sq

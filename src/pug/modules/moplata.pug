@@ -1,0 +1,37 @@
+a.button.button--red(href='#', data-toggle='modal', data-target='#moplata')  Он-лайн оплата услуг
+
+#moplata.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Он-лайн оплата услуг
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+         span(aria-hidden='true') ×
+      .modal-body
+        .row
+          .col-md-12
+            form.form-horizontal(action='https://money.yandex.ru/eshop.xml', method='post')
+             .form-group
+              input(name='shopId', value='556741', type='hidden', required='')
+              input(name='scid', value='878271', type='hidden', required='')
+              
+              label.control-label К оплате
+              input.form-control.form-control-sm(name='sum', value='', type='number', min='1', placeholder='0.0', required='')
+              
+              label.control-label Телефон покупателя
+              input.form-control.form-control-sm(required='', name='customerNumber', value='', size='64')
+             
+              label.control-label Имя покупателя
+              input.form-control.form-control-sm(name='custName', value='', size='64')
+                           
+              label.control-label Адрес объекта
+              input.form-control.form-control-sm(name='custAddr', value='', size='64')
+             
+              label.control-label Эл. почта покупателя
+              input.form-control.form-control-sm(name='custEmail', value='', size='64')
+             
+              label.control-label Комментарии к заказу
+              textarea.form-control.form-control-sm(name='orderDetails', value='', rows='5', cols='64', wrap='soft')
+             
+      .modal-footer
+        input.button.button--red(type='submit', value='Заплатить')

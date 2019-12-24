@@ -1,0 +1,27 @@
+
+extends ../layout/main
+
+block variables
+    - var title = 'Оценка земельных участков. Независимая оценочная компания Росоценка.'
+    - var name = "ocenka"
+    - var desc = "Оценка земельных участков - оценочная компания «Росоценка» в Екатеринбурге"
+
+block content
+  section#next.mb-5
+   .container
+     .row.justify-content-center
+       .col-md-12
+         button(type='button', data-toggle='modal', data-target='#exampleModal') Launch demo modal
+         #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+           .modal-dialog(role='document')
+             .modal-content
+               .modal-header
+                 h5#exampleModalLabel.modal-title Modal title
+                 button.close(type='button', data-dismiss='modal', aria-label='Close')
+                 span(aria-hidden='true') ×
+               .modal-body
+                 | ...
+               .modal-footer
+           
+               button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+               button.btn.btn-primary(type='button') Save changes

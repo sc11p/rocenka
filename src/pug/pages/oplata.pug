@@ -1,0 +1,42 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Независимая оценочная компания Росоценка. Онлайн оплата услуг.'
+    - var name = "oplata"
+    - var desc = "Онлайн оплата услуг компании Росоценка"
+
+block content
+    section.templateux-hero(data-scrollax-parent="true")
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Онлайн оплата услуг
+            a.go-down.js-smoothscroll(href="#next")
+    
+    section#next.mb-5
+       .container(data-aos="fade-up")
+         .note
+          form.form-horizontal(action='https://money.yandex.ru/eshop.xml', method='post')
+            .form-group
+              input(name='shopId', value='556741', type='hidden', required='')
+              input(name='scid', value='878271', type='hidden', required='')
+              
+              label.control-label К оплате
+              input.form-control.form-control-sm(name='sum', value='', type='number', min='1', placeholder='0.0', required='')
+              
+              label.control-label Телефон покупателя
+              input.form-control.form-control-sm(required='', name='customerNumber', value='', size='64')
+            
+              label.control-label Имя покупателя
+              input.form-control.form-control-sm(name='custName', value='', size='64')
+                          
+              label.control-label Адрес объекта
+              input.form-control.form-control-sm(name='custAddr', value='', size='64')
+            
+              label.control-label Эл. почта покупателя
+              input.form-control.form-control-sm(name='custEmail', value='', size='64')
+            
+              label.control-label Комментарии к заказу
+              textarea.form-control.form-control-sm(name='orderDetails', value='', rows='5', cols='64', wrap='soft')
+             
+            input.button.button--red(type='submit', value='Заплатить')

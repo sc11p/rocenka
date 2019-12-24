@@ -1,0 +1,113 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Независимая оценочная компания Росоценка. Оценка имущества. Технические экспертизы.'
+    - var name = "index"
+    - var desc = "Независимая оценочная компания «Росоценка» предлагает услуги по всем видам оценки и независимой экспертизы по привлекательным ценам"
+
+block content
+      section.templateux-hero(data-scrollax-parent="true")
+        .cover(data-scrollax="properties: { translateY: '30%' }")
+          img(src="../img/svg/hero1.svg")
+        .container
+          .row.align-items-center.justify-content-center.intro
+            .col-md-10(data-aos="fade-up")
+              a.animsition-link(href="#")
+                img(class="img-fluid" src="img/svg/logo_tr.svg" alt="Росоценка логотип")
+              a.go-down.js-smoothscroll(href="#next")
+
+
+      section#next.templateux-section
+        .container.py-5(data-aos="fade-up")
+          .row
+            .col-md-12.clearfix.mb-5(data-aos="fade-up")
+              h1 Наши услуги
+          .row
+            .col-md-12.clearfix.mb-3
+              nav#mytab
+                #nav-tab.nav.nav-tabs(role="tablist")
+                  a#nav-ocenka-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-ocenka" role="tab" aria-controls="nav-ocenka" aria-selected="true") Оценка
+                  a#nav-expertise-tab.nav-item.nav-link(data-toggle="tab" href="#nav-expertise" role="tab" aria-controls="nav-expertise" aria-selected="false") Экспертиза
+                  a#nav-strah-tab.nav-item.nav-link(href="../urist/") Юридические услуги
+                  a#nav-strah-tab.nav-item.nav-link(href="../strah/") Страхование
+              #nav-tabContent.tab-content
+                #nav-ocenka.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-ocenka-tab")
+                  section#services.servie_area.page-section.next.mb-5
+                    .container(data-aos="fade-up")    
+                      include ../modules/ocenka_sq
+                      
+                #nav-expertise.tab-pane.fade(role="tabpanel" aria-labelledby="nav-expertise-tab")
+                  section#services.servie_area.page-section
+                    .container
+                      include ../modules/expertise_sq
+
+      a.templateux-section.templateux-cta.animsition-link(href="../contact/" data-aos="fade-up")
+        .container-fluid
+          .cta-inner
+            h2
+              span.words-1 Уже работают с нами 
+              span.words-2 Косультации бесплатны
+ 
+      .templateux-section
+       .container.py-5(data-aos="fade-up")
+          include ../modules/customers
+      
+      section
+        .container
+          .row
+            .col-md-12.clearfix
+              h2 Мы эксперты
+            .col-md-6
+              p
+                | «Росоценка» — компания, нацеленная на предоставление комплекса интеллектуальных услуг в области оценки и
+                | независимой экспертизы различных видов имущества на территории <a href="../contact/">Екатеринбурга и других городов Урала</a>.
+              p
+                | Всех специалистов компании отличает уникальный синтез знаний и опыта, компетентности и молодости,
+                | рассудительности и энергичности. Мы выработали комплексную систему принципов и ценностей, которые
+                | отличают нас от других, которые характеризуют нас как ответственную и профессиональную оценочную и экспертную компанию
+                | гарантирующую объективность, независимость и качество услуг. Наши специалисты имеют многолетний опыт
+                | работы в области оценки, проведения экспертных исследований и стоимостного консультирования.
+            .col-md-6
+              p
+                | Приоритетным направлением деятельности оценочной компании является сохранение безупречной репутации, а задачей всех специалистов — соответствие высоким требованиям заказчиков, удовлетворение их потребностей в оценочной деятельности. 
+              p
+                | Оценщики и эксперты компании – опытные профессионалы, успешно работающие в оценочной деятельности на протяжении многих лет. Мы подготовили свыше 110 000 технических экспертиз и более 12 000 отчетов об оценке рыночной стоимости недвижимости, имущества, ущерба и оценке бизнеса.
+              p
+                | Эксперты компании выезжают на <a href="../ocenkan/">осмотры недвижимости</a>, <a href="../ocenkajn/">квартир</a>, <a href="../autotovar/">транспортных средств</a>, ущербов (после <a href="../ocenkau/">залива</a> и <a href="../autotovar/">ДТП</a>), в удобное для Вас время, в том числе в выходные и праздничные дни. 
+          .row.templateux-section
+            .col-md-12.clearfix.mb-5
+              h2 Команда
+            .col-md-6.col-lg-4.mb-4
+              .block-38
+                .block-38-img
+                  .block-38-header
+                    img(src="img/person_11.jpg" alt="Мартьянова Надежда Викторовна")
+                    h3.block-38-heading Надежда Мартьянова
+                    p.block-38-subheading Генеральный директор, основатель
+                  .block-38-body
+                    p
+                      | Горжусь тем, что мы продолжаем приобретать все новых и новых постоянных клиентов,
+                      | а также существенно расширили спектр нашего сотрудничества с рядом государственных и муниципальных структур,
+                      | что говорит о нашем успешном и плодотворном развитии в выбранной много лет назад сфере деятельности.
+            .col-md-6.col-lg-4.mb-4
+              .block-38
+                .block-38-img
+                  .block-38-header
+                    img(src="img/person_2.jpg" alt="Тутов Евгений Леонидович")
+                    h3.block-38-heading Евгений Тутов
+                    p.block-38-subheading Эксперт, основатель
+                  .block-38-body
+                    p
+                      | Наша команда всегда стремится применять все достижения науки и техники для производства технических экспертиз.
+                      | С 2017 года, нами применяются методы позволяющие установить затраты кинетической энергии автомобиля на деформацию.
+            .col-md-6.col-lg-4.mb-4
+              .block-38
+                .block-38-img
+                  .block-38-header
+                    img(src="img/person_3.jpg" alt="Олехов Вячеслав Викторович")
+                    h3.block-38-heading Вячеслав Олехов
+                    p.block-38-subheading Эксперт
+                  .block-38-body
+                    p
+                      | «Росоценка» гарантирует успешное решение всех вопросов, связанных с оценкой восстановительного ремонта, авто/технической экспертизой и другими направлениями деятельности нашей компании.
+                      | 

@@ -1,0 +1,440 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Независимая оценочная компания «Росоценка». Цены на услуги.'
+    - var name = "polezno"
+    - var desc = "Стоимость оценочных и экспертных услуг компании «Росоценка»"
+
+block content
+
+    section.templateux-hero(data-scrollax-parent="true")
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Стоимость услуг
+            a.go-down.js-smoothscroll(href="#next")
+
+    section#next.mb-5
+      .container(data-aos="fade-up")
+        .row
+          .col-md-12(data-aos="fade-up")
+            table.table-striped
+              tbody
+                tr
+                  td
+                    p(align='center')
+                      strong Объект оценки
+                  td
+                    p(align='center')
+                      strong Стоимость проведения оценки, руб.
+                  td
+                    p(align='center')
+                      strong Сроки выполнения, дни
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong Недвижимость 
+                tr
+                  td
+                    p(align='center')  Квартиры 
+                  td
+                    p(align='center')
+                      | 3 000
+                      br
+                  td
+                    p(align='center')  1-2 
+                tr
+                  td
+                    p(align='center')  Квартиры индивидуальные 
+                  td
+                    p(align='center')  4 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Коттедж 
+                  td
+                    p(align='center')
+                      | 8 000
+                      br
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Частный дом 
+                  td
+                    p(align='center')  5 500 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Гаражи, сады, погреба 
+                  td(style='text-align: center;')  2 500 
+                  td
+                    p(align='center')  1-2 
+                tr
+                  td
+                    p(align='center')  Земельный участок под строительство объектов коммерческого назначения 
+                  td
+                    p(align='center')  от 7 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Земельный участок под частное индивидуальное строительство 
+                  td
+                    p(align='center')  4 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Нежилые помещения площадью до 1 000 кв.м. 
+                  td
+                    p(align='center')  от 7 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Нежилые помещения более 1 000 кв.м. 
+                  td
+                    p(align='center')  от 15 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Объекты незавершенные строительством 
+                  td
+                    p(align='center')  от 12 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Отдельно-стоящее здание 
+                  td
+                    p(align='center')  15 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Имущественный комплекс 
+                  td
+                    p(align='center')  от 20 000 
+                  td
+                    p(align='center')  Договорные 
+                tr
+                  td
+                    p(align='center')  Определение ставки рыночной арендной платы 
+                  td
+                    p(align='center')  от 10 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong Транспортные средства 
+                tr
+                  td
+                    p(align='center')  Легковые Российского производства 
+                  td
+                    p(align='center')  3 500 
+                  td
+                    p(align='center')  1-2 
+                tr
+                  td
+                    p(align='center')  Грузовые Российского производства 
+                  td
+                    p(align='center')  5 000 
+                  td
+                    p(align='center')  1-2 
+                tr
+                  td
+                    p(align='center')  Легковые Иностранного производства 
+                  td
+                    p(align='center')  4 000 
+                  td
+                    p(align='center')  1-2 
+                tr
+                  td
+                    p(align='center')  Грузовые Иностранного производства 
+                  td
+                    p(align='center')  6 000 
+                  td
+                    p(align='center')  1-2 
+                tr
+                  td
+                    p(align='center')  Железнодорожный транспорт 
+                  td
+                    p(align='center')  от 8 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Речные, морские, воздушные суда 
+                  td
+                    p(align='center')  от 30 000 
+                  td
+                    p(align='center')  Договорные 
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong Оборудование 
+                tr
+                  td
+                    p(align='center')  Российского производства (ед.) 
+                  td
+                    p(align='center')  от 300 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Специальное техническое оборудование (ед.) 
+                  td
+                    p(align='center')  от 8 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Производственная линия российского производства 
+                  td
+                    p(align='center')  от 10 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Производственная линия иностранного производства 
+                  td
+                    p(align='center')  от 15 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Строительная и дорожная техника, подъемно-транспортные машины (ед.) 
+                  td
+                    p(align='center')  7 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Иностранного производства (ед.) 
+                  td
+                    p(align='center')  1 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Специальное техническое оборудование (ед.) 
+                  td
+                    p(align='center')  от 12 000 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Строительная и дорожная техника, подъемно-транспортные машины (ед.) 
+                  td
+                    p(align='center')  6 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Орг. и вычислительная техника (ед.) 
+                  td
+                    p(align='center')  от 300 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong  Ущерб 
+                tr
+                  td
+                    p(align='center')  Ущерб от затопления, пожара квартиры 
+                  td
+                    p(align='center')  Договорная 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Ущерб от затопления, пожара коммерческой недвижимости 
+                  td
+                    p(align='center')  Договорная 
+                  td
+                    p(align='center')  3-5 
+                tr
+                  td
+                    p(align='center')  Ущерб от ДТП 
+                  td
+                    p(align='center')  от 3 000 
+                  td
+                    p(align='center')  2-3 
+                tr
+                  td
+                    p(align='center')  Другие убытки 
+                  td
+                    p(align='center')  Договорная 
+                  td
+                    p(align='center')  Договорные 
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong Предприятие 
+                tr
+                  td
+                    p(align='center')  Финансовый анализ 
+                  td
+                    p(align='center')  от 20 000 
+                  td
+                    p(align='center')  7-14 
+                tr
+                  td
+                    p(align='center')  Нематериальные активы и интеллектуальная собственность 
+                  td
+                    p(align='center')  от 20 000 
+                  td
+                    p(align='center')  7-14 
+                tr
+                  td
+                    p(align='center')  Месторождения, лицензии на разработку месторождений 
+                  td
+                    p(align='center')  Договорная 
+                  td
+                    p(align='center')  Договорные 
+                tr
+                  td
+                    p(align='center')  Предприятие как бизнес (акции, доли в уставном капитале) 
+                  td
+                    p(align='center')  от 40 000 
+                  td
+                    p(align='center')  7-14 
+                tr.pure-table-odd
+                  td(colspan='3')
+                    p(align='center')
+                      strong Коэффициенты для расчеты конечной стоимости
+                tr
+                  td(colspan='3', valign='bottom')
+                    p(style='text-align: left;')
+                      strong                                                          Идентичность объектов
+                tr
+                  td(valign='bottom')
+                    p(style='text-align: center;')
+                      strong Количество однотипных объектов, шт.
+                  td(colspan='2', valign='bottom')
+                    p(align='center')
+                      strong Коэффициент идентичности
+                tr(style='text-align: center;')
+                  td(valign='bottom')
+                    p  1 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  1 
+                tr
+                  td(valign='bottom')
+                    p(style='text-align: center;')  2-4 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,9 
+                tr
+                  td(valign='bottom')
+                    p(style='text-align: center;')  5-9 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,85 
+                tr
+                  td(valign='bottom')
+                    p(style='text-align: center;')  10-14 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,7 
+                tr
+                  td(valign='bottom')
+                    p(style='text-align: center;')  15 - 19 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,6 
+                tr
+                  td(valign='bottom')
+                    p(style='text-align: center;')  20 - 49 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,45 
+                tr
+                  td(valign='bottom')
+                    p(style='text-align: center;')  более 50 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,3 
+                tr
+                  td(colspan='3')
+                    p(style='text-align: center;')
+                      strong Повышающий коэффициент за срочность выполнения работы
+                tr
+                  td(valign='bottom')
+                    p  Уменьшение срока исполнения в 2 (два) раза 
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  1,5 
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong Повышающий коэффициент за сложность работы
+                tr
+                  td(valign='bottom')
+                    p
+                      | Для объектов недвижимости представляющих историческую ценность принимается коэффициент:
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  2 
+                tr
+                  td(valign='bottom')
+                    p
+                      | Для объектов, незавершенных строительством при привлечении сторонних специалистов, вводится повышающий коэффициент:
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  3 
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong Понижающие коэффициенты
+                tr
+                  td(valign='bottom')
+                    p
+                      | Скидка постоянным клиентам (за обращение более одного раза), вводится коэффициент:
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,9 
+                tr
+                  td(valign='bottom')
+                    p
+                      | При оценке полной восстановительной стоимости с целью переоценки используется понижающий коэффициент:
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,7 
+                tr
+                  td(valign='bottom')
+                    p
+                      | При оценке рыночной стоимости новых объектов используется понижающий коэффициент:
+                  td(colspan='2', valign='bottom')
+                    p(align='center')  0,7 
+                tr
+                  td(colspan='3')
+                    p(align='center')
+                      strong Выезд специалиста
+                tr
+                  td(colspan='3', valign='bottom')
+                    p
+                      | Выезд специалиста за черту города осуществляется по ставке 15 руб./км. Выезд в черте города присутствия 500 рублей.
+                      br
+                tr.pure-table-odd
+                  td(colspan='3')
+                    p(align='center')
+                      strong Примечание 
+                tr
+                  td(colspan='3', valign='top')
+                    p  1. НДС за услуги по оценке не предусмотрен. 
+                tr
+                  td(colspan='3', valign='top')
+                    p
+                      | 2. Стоимость услуг включает в себя затраты на выезд специалиста для осмотра объекта оценки в черте г. Екатеринбурга. Выезд специалиста на осмотр за пределы черты города присутствия определяется исходя из затрат на транспортные расходы по ставке 15 руб./км.  Выезд в черте города присутствия 500 рублей.
+                tr
+                  td(colspan='3', valign='top')
+                    p
+                      | 3. Стоимость услуг может быть увеличена на коэффициент сложности работы. Данный коэффициент учитывает привлечение сторонних специалистов в соответствующих отраслях (инженеров, аудиторов, геологов, специалистов по авиатехнике и кораблестроению и т.п.).
+                tr
+                  td(colspan='3', valign='top')
+                    p
+                      | 4. Для объектов, незавершенных строительством при привлечении сторонних специалистов (сметчиков, строителей и пр.), вводится повышающий коэффициент 3,0
+                tr
+                  td(colspan='3', valign='top')
+                    p
+                      | 5. Расчет сроков выполнения работы делается исходя из минимальных сроков рекомендованными и утвержденными Национальным Советом по Оценочной Деятельности в РФ (протокол № 15 от 20 апреля 2005 г.,протокол № 2 от 18 ноября 2008 г.). Уменьшение срока исполнения в два раза приводит к увеличению стоимости услуг в 1,5 раза.
+                tr
+                  td(colspan='3', valign='top')
+                    p
+                      | 6. Окончательная стоимость услуг по оценке имущества согласовывается с Заказчиком по результатам предварительного осмотра и изучения документации.

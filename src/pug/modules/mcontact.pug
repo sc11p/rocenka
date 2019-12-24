@@ -1,0 +1,47 @@
+a.button.button--red(href='#', data-toggle='modal', data-target='#contactModal')  Заказать консультацию
+
+#contactModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='contactModalLabel', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Заявка на консультацию
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+        span(aria-hidden='true') ×
+      form.gform(method='POST', action='https://script.google.com/macros/s/AKfycbxNb-_nTk_B9xrc96Es5WxKTSpJK6SGjAss70G32KOlWGRv69k/exec')
+        .form-elements
+        .modal-body
+          .row
+            .col-md-6
+              .form-group
+                label(for='form_name') Имя *
+                input#form_name.form-control(type='text', name='name', placeholder='Пожалуйста введите Ваше имя', required='required', data-error='Имя обязательное поля для заполнения.')
+                .help-block.with-errors
+            .col-md-6
+              .form-group
+                label(for='form_lastname') Фамилия *
+                input#form_lastname.form-control(type='text', name='surname', placeholder='Пожалуйста введите Вашу фамилию *', required='required', data-error='Фамилия обязательное поля для заполнения.')
+                .help-block.with-errors
+          .row
+            .col-md-6
+              .form-group
+                label(for='form_email') Email *
+                input#form_email.form-control(type='email', name='email', placeholder='Пожалуйста введите Ваш email *', required='required', data-error='Email это обязательное поле.')
+                .help-block.with-errors
+            .col-md-6
+              .form-group
+                label(for='form_email') Телефон *
+                input#form_email.form-control(type='tel', name='tel', placeholder='Пожалуйста введите Ваш телефон *', required='required', data-error='Телефон это обязательное поле.')
+                .help-block.with-errors
+          .row
+            .col-md-12
+              .form-group
+                label(for='form_message') Текст сообщения *
+                textarea#form_message.form-control(name='message', placeholder='Тект сообщения *', rows='4', required='required', data-error='Пожалуйста, заполните тест сообщения.')
+                .help-block.with-errors
+          .row
+            .col-md-12
+              p.text-muted.small
+                | Заполняя форму, вы соглашаетесь с тем, что вся информация, предоставленная вами, может быть использована «Росоценкой» по своему усмотрению в соответствии с <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/">ФЗ РФ № 152-ФЗ «О персональных данных» от 27 июля 2006 г.</a>
+        .modal-footer
+          button.button.button--red(type='submit') Отправить
+          

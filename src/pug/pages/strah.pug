@@ -1,0 +1,63 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Страхование. Независимая компания Росоценка.'
+    - var name = "strah"
+    - var desc = "Компания «Росоценка» предлагает услуги страхования в Екатеринбурге и городах Свердловской области по низким ценам. Прямое страхование автомобилей (КАСКО, ОСАГО), туристов, несчастных случаев, имущества. Оформление полиса за 5 минут!"
+
+block content
+    section.templateux-hero(data-scrollax-parent="true")
+      
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Страхование ОСАГО, КАСКО, недвижимости
+            a.go-down.js-smoothscroll(href="#next")
+    
+    section#next.mb-5
+      .container(data-aos="fade-up")
+        .row.justify-content-center
+          .col-md-12
+            .row.work-detail
+              .col-md-3
+                span.caption Раздел
+                strong Страхование
+              .col-md-3
+                span.caption Где
+                strong Территория России
+              .col-md-3
+                span.caption Соимость
+                strong > 500 руб.
+              .col-md-3
+                span.caption Связь
+                strong 8 800 200-3770
+        .row.justify-content-start
+          .col-md-11
+            p.doublesize
+              |  «Росоценка» – открывает новую услугу. Теперь, здесь в Екатеринбурге, мы страхуем автотранспорт по программам ОСАГО, КАСКО. Доступны любые другие виды страхования.
+        .row.justify-content-center     
+          .col-md-10
+            p.text-center.mb-5
+              img.img-fluid(src="../img/svg/city.svg" alt="Услуги страхования в Екатеринбурге . Независимая компания Росоценка.")
+       
+            
+           
+    section.zakaz-section
+      .container
+        .row.justify-content-center
+          .col-md-10
+            p.text-center
+              include ../modules/mcontact
+     
+    section.testimony
+      .container
+        .row.justify-content-center
+          .col-md-10
+            blockquote.mb-5
+              p
+                | “Все виды страховых услуг в Екатеринбурге и Свредловской области от компании Росоценка: выгодные предложения и доступные цены”
+            p.author
+              | — 
+              span Надежда Мартьянова
+              | , 
+              span Генеральный директор

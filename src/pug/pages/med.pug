@@ -1,0 +1,65 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Медицинская экспертиза. Независимая экспертная компания «Росоценка».'
+    - var name = "expertise"
+    - var desc = "Медицинская экспертиза документов в Екатеринбурге. Экспертиза в которой специалисты независимой компании «Росоценка» определят размер расходов на лечение по договорам ОСАГО."
+
+block content
+    section.templateux-hero(data-scrollax-parent="true")
+      
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Медицинская экспертиза
+            a.go-down.js-smoothscroll(href="#next")
+    
+    section#next.mb-5
+      .container(data-aos="fade-up")
+        .row.justify-content-center
+          .col-md-12
+            .row.work-detail
+              .col-md-3
+                span.caption Раздел
+                strong Экспертиза
+              .col-md-3
+                span.caption Где
+                strong Территория России
+              .col-md-3
+                span.caption Соимость
+                strong >15 000 руб.
+              .col-md-3
+                span.caption Связь
+                strong 8 800 200-3770
+        .row.justify-content-start
+          .col-md-11
+            p.doublesize
+              |  В рамках определения размера компенсационных выплат по договорам обязательного страхования автогражданской ответственности, Росоценка проводит судебно-медицинскую экспертизу и медицинскую экспертизу документов. 
+        .row.justify-content-center     
+          .col-md-10
+            p.text-center.mb-5
+              img.img-fluid(src="../img/svg/city.svg" alt="Трасологическая экспертиза. Независимая экспертная компания Росоценка.")
+
+            h3 Медицинская экспертиза документов по ОСАГО.
+            p
+              | Профессиональные медицинские экспертизы проводятся как по внесудебным делам связанным с ОСАГО, так и в рамках  гражданского и уголовного судопроизводства и по постановлениям органов следствия в случаях причинения вреда здоровью или наступления смерти.
+
+    section.zakaz-section
+      .container
+        .row.justify-content-center
+          .col-md-10
+            p.text-center
+              include ../modules/mcontact
+     
+    section.testimony
+      .container
+        .row.justify-content-center
+          .col-md-10
+            blockquote.mb-5
+              p
+                | “В компетенцию эксперта входит изучение всех медицинских документов (справок, протоколов, снимков, истории болезни и т. д.), на основании которых составляет заключение”
+            p.author
+              | — 
+              span Вячеслав Олехов
+              | , 
+              span Заместитель директора, эксперт

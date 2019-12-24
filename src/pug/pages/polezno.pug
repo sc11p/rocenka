@@ -1,0 +1,59 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Независимая оценочная компания «Росоценка». Полезная информация.'
+    - var name = "polezno"
+    - var desc = "Полезная информация компании «Росоценка»"
+
+block content
+
+    section.templateux-hero(data-scrollax-parent="true")
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Полезная информация
+            a.go-down.js-smoothscroll(href="#next")
+    
+
+    section#next.mb-5
+      .container(data-aos="fade-up")
+         .row.justify-content-md-left
+           ul 
+            li
+              a.filelink(href="../price/") Цены на услуги компании «Росоценка» 
+                i.fas.fa-link
+            
+            li
+              a.filelink(href="../rekvizit/") Реквизиты компании «Росоценка» 
+                i.fas.fa-link
+            
+            li
+              a.filelink(href="../telegramma.odt") Текст телеграммы для физических лиц при повреждении автотранспортного средства в результате ДТП 
+                i.far.fa-file-word
+            
+            li
+              a.filelink(href="../hodataistvo.odt") Образец ходатайства о назначении судебной экспертизы 
+                i.far.fa-file-word
+
+    section#next.mb-5
+       .container(data-aos="fade-up")
+          // Stats Section
+          .container.space-2
+            .row.justify-content-md-center
+              .col-6.col-md-5.col-lg-4
+                // Stats
+                .text-center
+                  span.display-4.d-block.text-dark.mb-2 111k+
+                  p.lead Технических экспертиз
+                // End Stats
+              .col-6.col-md-5.col-lg-4
+                // Stats
+                .text-center
+                  span.display-4.d-block.text-dark.mb-2 12k+
+                  p.lead Отчетов об оценке
+                // End Stats
+          // End Stats Section
+            
+        
+
+

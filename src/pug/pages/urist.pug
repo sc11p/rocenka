@@ -1,0 +1,64 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Юридические услуги заказать в компании «Росоценка»'
+    - var name = ""
+    - var desc = "Юридические услуги - оценочная компания «Росоценка» в Екатеринбурге"
+
+block content
+
+    section.templateux-hero(data-scrollax-parent="true")
+      .container
+        .row.align-items-center.justify-content-center.intro
+          .col-md-12(data-aos="fade-up")
+            h1 Юридические услуги
+            a.go-down.js-smoothscroll(href="#next")
+    
+
+        section#next.mb-5
+      .container(data-aos="fade-up")
+        .row.justify-content-center
+          .col-md-12
+            .row.work-detail
+              .col-md-3
+                span.caption Раздел
+                strong Юридические услуги
+              .col-md-3
+                span.caption Где
+                strong Территория России
+              .col-md-3
+                span.caption Соимость
+                strong договорная
+              .col-md-3
+                span.caption Связь
+                strong 8 800 200-3770
+        .row.justify-content-start
+          .col-md-11
+            p.doublesize
+              |  «Росоценка» – все виды юридических услуг связанных в области оценочной и экспертной деятельности
+        .row.justify-content-center     
+          .col-md-10
+            p.text-center.mb-5
+              img.img-fluid(src="../img/svg/city.svg" alt="Юридические услуги в Екатеринбурге . Независимая компания Росоценка.")
+       
+            
+           
+    section.zakaz-section
+      .container
+        .row.justify-content-center
+          .col-md-10
+            p.text-center
+              include ../modules/mcontact
+     
+    section.testimony
+      .container
+        .row.justify-content-center
+          .col-md-10
+            blockquote.mb-5
+              p
+                | “Все виды юридических услуг в Екатеринбурге и Свредловской области от компании Росоценка: выгодные предложения и доступные цены”
+            p.author
+              | — 
+              span Надежда Мартьянова
+              | , 
+              span Генеральный директор
