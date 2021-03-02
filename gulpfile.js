@@ -85,7 +85,7 @@ const ftpConfig = {
 
 const clean = () => del(['build']);
 
-var production = true; //true //== false default
+var production = false; //true //== false default
 var gitRepo = '';
 var msgCommit = 'first commit'; // default
 
